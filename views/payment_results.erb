@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Result</title>
+</head>
+<body>
+    <h1>Loan Payment</h1>
+    <p>For an APR of <%= @apr.round(4) %>%, a loan amount of $<%= sprintf('%.2f', @principal) %>, and a term of <%= @years %> years, your monthly payment is <strong>$<%= sprintf('%.2f', @monthly_payment) %></strong>.</p>
+    <a href="/payment/new">Calculate another</a>
+</body>
+</html>
